@@ -1,0 +1,57 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: zuul-service
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8001/eureka/
+  instance:
+    prefer-ip-address: true
+feign:
+  # 断路器
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+        timeout:
+          enabled: true
+ribbon:
+  ConnectTimeout: 50000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 0
+  ReadTimeout: 50000
+  SocketTimeout: 50000
+  eureka:
+    enabled: true
+zuul:
+  max:
+    host:
+      connections: 20000
+  routes:
+    # 用户端
+    userservice:
+      path: /user/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      serviceId: user-service
+      stripPrefix: true
+    # 管理端
+    managerservice:
+      path: /manager/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      serviceId: manager-service
+      stripPrefix: true
+    # 应用端
+    applyservice:
+      path: /apply/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      serviceId: apply-service
+      stripPrefix: true

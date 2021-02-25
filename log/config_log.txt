@@ -1,0 +1,920 @@
+2021-02-25 10:38:51,542 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 10:38:51,548 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 11516 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 10:38:51,550 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 10:38:52,380 INFO (GenericScope.java:288)- BeanFactory id=64d14da5-a521-3734-8278-c62184b9e6ba
+2021-02-25 10:38:52,589 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 10:38:52,596 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 10:38:52,596 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 10:38:52,597 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 10:38:52,762 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 10:38:52,762 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1172 ms
+2021-02-25 10:38:53,010 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 10:38:55,924 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 10:38:55,971 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 10:38:55,975 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 10:38:56,026 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 10:38:56,052 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 10:38:56,840 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 10:38:56,841 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 10:38:56,909 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 10:38:56,910 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 10:38:57,022 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 10:38:57,683 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 10:38:57,683 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 10:38:57,684 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 10:38:57,684 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 10:38:57,684 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 10:38:57,684 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 10:38:57,684 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 10:38:57,818 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 10:38:57,820 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 10:38:57,821 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 10:38:57,824 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614220737824 with initial instances count: 0
+2021-02-25 10:38:57,826 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 10:38:57,826 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614220737826, current=UP, previous=STARTING]
+2021-02-25 10:38:57,828 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 10:38:57,829 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 10:38:57,850 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 10:38:57,851 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 10:38:57,897 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 10:38:58,909 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.139 seconds (JVM running for 10.963)
+2021-02-25 10:39:00,783 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 10:39:00,784 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 10:39:00,785 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 10:39:27,828 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 10:39:27,828 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 10:39:27,828 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 10:39:27,828 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 10:39:27,828 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 10:39:27,828 INFO (DiscoveryClient.java:1013)- Application version is -1: false
+2021-02-25 10:39:27,828 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 10:39:27,850 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 10:43:57,688 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 10:48:57,691 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 10:53:57,698 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 10:58:06,651 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 10:58:06,658 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 13760 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 10:58:06,658 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 10:58:07,544 INFO (GenericScope.java:288)- BeanFactory id=64d14da5-a521-3734-8278-c62184b9e6ba
+2021-02-25 10:58:07,757 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 10:58:07,764 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 10:58:07,765 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 10:58:07,765 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 10:58:07,933 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 10:58:07,934 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1231 ms
+2021-02-25 10:58:08,203 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 10:58:10,779 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 10:58:10,829 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 10:58:10,835 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 10:58:10,893 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 10:58:10,922 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 10:58:11,840 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 10:58:11,841 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 10:58:11,933 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 10:58:11,933 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 10:58:12,063 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 10:58:12,810 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 10:58:12,811 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 10:58:12,811 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 10:58:12,812 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 10:58:12,812 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 10:58:12,812 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 10:58:12,812 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 10:58:12,952 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 10:58:12,954 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 10:58:12,955 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 10:58:12,959 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614221892958 with initial instances count: 0
+2021-02-25 10:58:12,960 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 10:58:12,961 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614221892961, current=UP, previous=STARTING]
+2021-02-25 10:58:12,963 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 10:58:12,963 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 10:58:12,984 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 10:58:12,985 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 10:58:13,027 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 10:58:14,060 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.677 seconds (JVM running for 11.493)
+2021-02-25 10:58:14,946 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 10:58:14,946 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 10:58:14,947 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 10:58:42,970 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 10:58:42,970 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 10:58:42,970 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 10:58:42,970 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 10:58:42,970 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 10:58:42,971 INFO (DiscoveryClient.java:1013)- Application version is -1: false
+2021-02-25 10:58:42,971 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 10:58:42,999 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 11:00:59,199 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 11:00:59,206 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 17488 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 11:00:59,206 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 11:00:59,983 INFO (GenericScope.java:288)- BeanFactory id=cf08d5bd-c1f4-3d65-9d10-0e60ba6913d5
+2021-02-25 11:01:00,174 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 11:01:00,180 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:01:00,181 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 11:01:00,181 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 11:01:00,339 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 11:01:00,339 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1097 ms
+2021-02-25 11:01:00,583 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 11:01:02,936 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 11:01:03,059 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 11:01:03,064 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 11:01:03,113 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 11:01:03,135 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 11:01:03,936 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:01:03,936 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:01:04,007 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:01:04,008 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:01:04,119 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:01:04,829 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 11:01:04,830 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 11:01:04,831 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 11:01:04,831 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 11:01:04,831 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 11:01:04,831 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 11:01:04,831 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 11:01:04,929 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 11:01:04,932 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 11:01:04,933 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 11:01:04,936 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614222064936 with initial instances count: 1
+2021-02-25 11:01:04,937 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 11:01:04,938 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614222064938, current=UP, previous=STARTING]
+2021-02-25 11:01:04,940 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 11:01:04,940 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:01:04,960 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 11:01:04,961 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 11:01:04,975 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 11:01:06,021 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 8.639 seconds (JVM running for 10.474)
+2021-02-25 11:01:07,546 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 11:01:07,547 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 11:01:07,548 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 11:05:32,254 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 11:05:32,258 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 6600 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 11:05:32,258 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 11:05:33,042 INFO (GenericScope.java:288)- BeanFactory id=cf08d5bd-c1f4-3d65-9d10-0e60ba6913d5
+2021-02-25 11:05:33,239 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 11:05:33,245 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:05:33,246 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 11:05:33,246 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 11:05:33,402 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 11:05:33,403 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1109 ms
+2021-02-25 11:05:33,643 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 11:05:36,043 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 11:05:36,175 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 11:05:36,180 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 11:05:36,234 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 11:05:36,261 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 11:05:37,403 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:05:37,403 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:05:37,479 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:05:37,479 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:05:37,599 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:05:38,306 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 11:05:38,307 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 11:05:38,307 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 11:05:38,307 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 11:05:38,307 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 11:05:38,307 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 11:05:38,308 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 11:05:38,426 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 11:05:38,428 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 11:05:38,430 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 11:05:38,433 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614222338432 with initial instances count: 1
+2021-02-25 11:05:38,434 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 11:05:38,435 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614222338435, current=UP, previous=STARTING]
+2021-02-25 11:05:38,437 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 11:05:38,437 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:05:38,458 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 11:05:38,458 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 11:05:38,467 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 11:05:39,468 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.021 seconds (JVM running for 10.914)
+2021-02-25 11:05:40,507 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 11:05:40,507 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 11:05:40,508 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 11:10:38,311 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:15:38,314 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:19:42,046 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 11:19:42,049 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 6856 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 11:19:42,049 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 11:19:42,850 INFO (GenericScope.java:288)- BeanFactory id=bc65946f-b1e1-30c5-aa7e-76395047d531
+2021-02-25 11:19:43,038 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 11:19:43,044 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:19:43,044 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 11:19:43,045 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 11:19:43,235 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 11:19:43,236 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1150 ms
+2021-02-25 11:19:43,737 INFO (WebApplicationImpl.java:815)- Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-02-25 11:19:43,784 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:19:43,785 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:19:43,858 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:19:43,859 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:19:44,207 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 11:19:46,641 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 11:19:46,766 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 11:19:46,779 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 11:19:46,802 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 11:19:47,612 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:19:47,612 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:19:47,612 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:19:47,612 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:19:47,668 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:19:48,397 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 11:19:48,397 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 11:19:48,397 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 11:19:48,397 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 11:19:48,398 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 11:19:48,398 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 11:19:48,398 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 11:19:48,493 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 11:19:48,495 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 11:19:48,497 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 11:19:48,501 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614223188500 with initial instances count: 1
+2021-02-25 11:19:48,521 INFO (DefaultEurekaServerContext.java:66)- Initializing ...
+2021-02-25 11:19:48,523 INFO (PeerEurekaNodes.java:187)- Adding new peer nodes [http://127.0.0.1:8001/eureka/]
+2021-02-25 11:19:48,526 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:19:48,526 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:19:48,526 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:19:48,527 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:19:48,574 INFO (PeerEurekaNodes.java:109)- Replica node URL:  http://127.0.0.1:8001/eureka/
+2021-02-25 11:19:48,580 INFO (AbstractInstanceRegistry.java:153)- Finished initializing remote region registries. All known remote regions: []
+2021-02-25 11:19:48,581 INFO (DefaultEurekaServerContext.java:73)- Initialized
+2021-02-25 11:19:48,585 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 11:19:48,632 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 11:19:48,633 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614223188633, current=UP, previous=STARTING]
+2021-02-25 11:19:48,635 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 11:19:48,636 INFO (EurekaServerBootstrap.java:97)- Setting the eureka configuration..
+2021-02-25 11:19:48,637 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:19:48,646 INFO (EurekaServerBootstrap.java:148)- isAws returned false
+2021-02-25 11:19:48,646 INFO (EurekaServerBootstrap.java:114)- Initialized server context
+2021-02-25 11:19:48,652 INFO (AbstractInstanceRegistry.java:266)- Registered instance CONFIG-SERVER/192.168.21.126:config-server:8011 with status UP (replication=true)
+2021-02-25 11:19:48,652 INFO (PeerAwareInstanceRegistryImpl.java:244)- Got 1 instances from neighboring DS node
+2021-02-25 11:19:48,652 INFO (PeerAwareInstanceRegistryImpl.java:245)- Renew threshold is: 1
+2021-02-25 11:19:48,652 INFO (PeerAwareInstanceRegistryImpl.java:256)- Changing status to UP
+2021-02-25 11:19:48,657 INFO (EurekaServerInitializerConfiguration.java:69)- Started Eureka Server
+2021-02-25 11:19:48,658 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 11:19:48,659 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 11:19:48,676 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 11:19:49,707 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.451 seconds (JVM running for 11.319)
+2021-02-25 11:19:50,637 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 11:19:50,637 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 11:19:50,639 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 11:20:48,658 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 11:21:48,673 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 11:22:48,688 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 15ms
+2021-02-25 11:23:48,694 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 11:24:48,413 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:24:48,705 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 11:25:48,718 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 11:26:48,726 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 11:29:53,482 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 11:29:53,486 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 12156 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 11:29:53,487 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 11:29:54,259 INFO (GenericScope.java:288)- BeanFactory id=bc65946f-b1e1-30c5-aa7e-76395047d531
+2021-02-25 11:29:54,452 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 11:29:54,458 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:29:54,459 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 11:29:54,459 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 11:29:54,618 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 11:29:54,618 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1096 ms
+2021-02-25 11:29:55,100 INFO (WebApplicationImpl.java:815)- Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-02-25 11:29:55,141 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:29:55,142 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:29:55,202 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:29:55,203 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:29:55,514 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 11:29:57,982 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 11:29:58,094 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 11:29:58,105 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 11:29:58,126 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 11:29:58,907 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:29:58,908 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:29:58,908 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:29:58,908 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:29:58,962 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:29:59,627 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 11:29:59,628 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 11:29:59,628 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 11:29:59,628 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 11:29:59,628 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 11:29:59,628 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 11:29:59,629 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 11:29:59,719 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 11:29:59,721 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 11:29:59,723 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 11:29:59,726 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614223799725 with initial instances count: 1
+2021-02-25 11:29:59,746 INFO (DefaultEurekaServerContext.java:66)- Initializing ...
+2021-02-25 11:29:59,748 INFO (PeerEurekaNodes.java:187)- Adding new peer nodes [http://127.0.0.1:8001/eureka/]
+2021-02-25 11:29:59,751 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:29:59,751 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:29:59,751 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:29:59,752 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:29:59,795 INFO (PeerEurekaNodes.java:109)- Replica node URL:  http://127.0.0.1:8001/eureka/
+2021-02-25 11:29:59,800 INFO (AbstractInstanceRegistry.java:153)- Finished initializing remote region registries. All known remote regions: []
+2021-02-25 11:29:59,801 INFO (DefaultEurekaServerContext.java:73)- Initialized
+2021-02-25 11:29:59,805 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 11:29:59,849 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 11:29:59,850 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614223799850, current=UP, previous=STARTING]
+2021-02-25 11:29:59,852 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 11:29:59,853 INFO (EurekaServerBootstrap.java:97)- Setting the eureka configuration..
+2021-02-25 11:29:59,854 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:29:59,866 INFO (EurekaServerBootstrap.java:148)- isAws returned false
+2021-02-25 11:29:59,866 INFO (EurekaServerBootstrap.java:114)- Initialized server context
+2021-02-25 11:29:59,871 INFO (AbstractInstanceRegistry.java:266)- Registered instance CONFIG-SERVER/192.168.21.126:config-server:8011 with status UP (replication=true)
+2021-02-25 11:29:59,872 INFO (PeerAwareInstanceRegistryImpl.java:244)- Got 1 instances from neighboring DS node
+2021-02-25 11:29:59,872 INFO (PeerAwareInstanceRegistryImpl.java:245)- Renew threshold is: 1
+2021-02-25 11:29:59,872 INFO (PeerAwareInstanceRegistryImpl.java:256)- Changing status to UP
+2021-02-25 11:29:59,878 INFO (EurekaServerInitializerConfiguration.java:69)- Started Eureka Server
+2021-02-25 11:29:59,879 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 11:29:59,880 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 11:29:59,895 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 11:30:01,336 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.69 seconds (JVM running for 11.659)
+2021-02-25 11:30:03,412 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 11:30:03,413 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 11:30:03,414 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 11:30:17,731 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 11:30:59,874 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 11:31:59,875 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 11:32:30,902 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 11:32:30,905 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 12884 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 11:32:30,906 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 11:32:31,639 INFO (GenericScope.java:288)- BeanFactory id=bc65946f-b1e1-30c5-aa7e-76395047d531
+2021-02-25 11:32:31,829 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 11:32:31,835 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:32:31,836 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 11:32:31,836 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 11:32:31,997 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 11:32:31,997 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1057 ms
+2021-02-25 11:32:32,471 INFO (WebApplicationImpl.java:815)- Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-02-25 11:32:32,517 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:32:32,518 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:32:32,583 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:32:32,583 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:32:32,892 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 11:32:35,776 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 11:32:35,898 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 11:32:35,912 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 11:32:35,935 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 11:32:36,747 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:32:36,748 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:32:36,748 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:32:36,748 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:32:36,798 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:32:37,460 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 11:32:37,460 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 11:32:37,461 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 11:32:37,461 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 11:32:37,461 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 11:32:37,461 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 11:32:37,462 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 11:32:37,554 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 11:32:37,556 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 11:32:37,558 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 11:32:37,561 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614223957561 with initial instances count: 1
+2021-02-25 11:32:37,581 INFO (DefaultEurekaServerContext.java:66)- Initializing ...
+2021-02-25 11:32:37,583 INFO (PeerEurekaNodes.java:187)- Adding new peer nodes [http://127.0.0.1:8001/eureka/]
+2021-02-25 11:32:37,585 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:32:37,586 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:32:37,586 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:32:37,586 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:32:37,630 INFO (PeerEurekaNodes.java:109)- Replica node URL:  http://127.0.0.1:8001/eureka/
+2021-02-25 11:32:37,635 INFO (AbstractInstanceRegistry.java:153)- Finished initializing remote region registries. All known remote regions: []
+2021-02-25 11:32:37,636 INFO (DefaultEurekaServerContext.java:73)- Initialized
+2021-02-25 11:32:37,640 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 11:32:37,685 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 11:32:37,685 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614223957685, current=UP, previous=STARTING]
+2021-02-25 11:32:37,687 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 11:32:37,688 INFO (EurekaServerBootstrap.java:97)- Setting the eureka configuration..
+2021-02-25 11:32:37,688 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:32:37,699 INFO (EurekaServerBootstrap.java:148)- isAws returned false
+2021-02-25 11:32:37,700 INFO (EurekaServerBootstrap.java:114)- Initialized server context
+2021-02-25 11:32:37,704 INFO (AbstractInstanceRegistry.java:266)- Registered instance CONFIG-SERVER/192.168.21.126:config-server:8011 with status UP (replication=true)
+2021-02-25 11:32:37,705 INFO (PeerAwareInstanceRegistryImpl.java:244)- Got 1 instances from neighboring DS node
+2021-02-25 11:32:37,705 INFO (PeerAwareInstanceRegistryImpl.java:245)- Renew threshold is: 1
+2021-02-25 11:32:37,705 INFO (PeerAwareInstanceRegistryImpl.java:256)- Changing status to UP
+2021-02-25 11:32:37,712 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 11:32:37,712 INFO (EurekaServerInitializerConfiguration.java:69)- Started Eureka Server
+2021-02-25 11:32:37,713 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 11:32:37,727 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 11:32:38,723 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.643 seconds (JVM running for 11.485)
+2021-02-25 11:32:40,546 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 11:32:40,547 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 11:32:40,548 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 11:36:16,739 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 11:36:16,743 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 11212 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 11:36:16,743 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 11:36:17,494 INFO (GenericScope.java:288)- BeanFactory id=bc65946f-b1e1-30c5-aa7e-76395047d531
+2021-02-25 11:36:17,679 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 11:36:17,685 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:36:17,686 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 11:36:17,686 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 11:36:17,851 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 11:36:17,852 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1073 ms
+2021-02-25 11:36:18,309 INFO (WebApplicationImpl.java:815)- Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-02-25 11:36:18,350 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:36:18,351 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:36:18,417 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:36:18,417 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:36:18,726 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 11:36:21,160 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 11:36:21,271 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 11:36:21,283 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 11:36:21,303 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 11:36:22,068 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:36:22,069 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:36:22,069 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:36:22,069 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:36:22,122 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:36:22,771 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 11:36:22,771 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 11:36:22,771 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 11:36:22,771 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 11:36:22,772 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 11:36:22,772 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 11:36:22,772 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 11:36:22,866 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 11:36:22,869 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 11:36:22,872 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 11:36:22,875 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614224182874 with initial instances count: 1
+2021-02-25 11:36:22,894 INFO (DefaultEurekaServerContext.java:66)- Initializing ...
+2021-02-25 11:36:22,895 INFO (PeerEurekaNodes.java:187)- Adding new peer nodes [http://127.0.0.1:8001/eureka/]
+2021-02-25 11:36:22,898 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 11:36:22,899 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 11:36:22,899 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 11:36:22,899 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 11:36:22,942 INFO (PeerEurekaNodes.java:109)- Replica node URL:  http://127.0.0.1:8001/eureka/
+2021-02-25 11:36:22,948 INFO (AbstractInstanceRegistry.java:153)- Finished initializing remote region registries. All known remote regions: []
+2021-02-25 11:36:22,949 INFO (DefaultEurekaServerContext.java:73)- Initialized
+2021-02-25 11:36:22,954 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 11:36:22,999 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 11:36:22,999 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614224182999, current=UP, previous=STARTING]
+2021-02-25 11:36:23,002 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 11:36:23,003 INFO (EurekaServerBootstrap.java:97)- Setting the eureka configuration..
+2021-02-25 11:36:23,004 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 11:36:23,013 INFO (EurekaServerBootstrap.java:148)- isAws returned false
+2021-02-25 11:36:23,014 INFO (EurekaServerBootstrap.java:114)- Initialized server context
+2021-02-25 11:36:23,020 INFO (AbstractInstanceRegistry.java:266)- Registered instance CONFIG-SERVER/192.168.21.126:config-server:8011 with status UP (replication=true)
+2021-02-25 11:36:23,020 INFO (PeerAwareInstanceRegistryImpl.java:244)- Got 1 instances from neighboring DS node
+2021-02-25 11:36:23,020 INFO (PeerAwareInstanceRegistryImpl.java:245)- Renew threshold is: 1
+2021-02-25 11:36:23,020 INFO (PeerAwareInstanceRegistryImpl.java:256)- Changing status to UP
+2021-02-25 11:36:23,025 INFO (EurekaServerInitializerConfiguration.java:69)- Started Eureka Server
+2021-02-25 11:36:23,027 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 11:36:23,028 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 11:36:23,035 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 11:36:24,037 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.1 seconds (JVM running for 10.893)
+2021-02-25 11:36:25,529 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 11:36:25,530 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 11:36:25,531 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 11:37:23,031 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 11:38:23,037 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 11:39:23,050 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 11:40:23,055 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 11:41:22,784 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:41:23,071 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 11:42:23,075 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 11:43:23,088 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 11:44:23,096 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 11:45:23,103 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 11:46:22,790 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:46:23,117 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 11:47:23,118 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 11:48:23,118 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 11:49:23,121 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 11:50:23,132 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 11:51:22,801 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:51:22,956 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 11:51:23,142 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 11:52:23,152 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 11:53:23,161 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 11:54:23,175 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 11:55:23,189 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 11:56:22,804 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 11:56:23,200 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 11:57:23,210 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 11:58:23,220 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 11:59:23,230 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 12:00:23,242 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:01:22,819 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:01:23,254 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:02:23,255 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 12:03:23,259 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 12:04:23,274 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 15ms
+2021-02-25 12:05:23,283 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 12:06:22,821 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:06:22,964 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 12:06:23,298 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 12:07:23,307 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 12:08:23,315 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 12:09:23,319 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 12:10:23,329 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 12:11:22,823 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:11:23,334 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 12:12:23,334 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 12:13:23,347 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:14:23,357 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 12:15:23,367 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 12:16:22,836 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:16:23,376 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 12:17:23,383 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 12:18:23,388 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 12:19:23,398 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 12:20:23,411 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:21:22,844 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:21:22,971 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 12:21:23,418 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 12:22:23,431 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:23:23,435 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 12:24:23,440 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 12:25:23,443 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 12:26:22,851 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:26:23,444 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 12:27:23,454 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 12:28:23,454 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 12:29:23,458 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 12:30:23,469 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 12:31:22,859 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:31:23,484 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 15ms
+2021-02-25 12:32:23,496 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:33:23,509 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:34:23,522 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 12:35:23,530 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 12:36:22,864 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:36:22,972 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 12:36:23,544 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 12:37:23,547 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 12:38:23,554 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 12:39:23,563 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 12:40:23,563 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 12:41:22,879 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:41:23,576 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:42:23,579 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 12:43:23,582 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 12:44:23,593 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 12:45:23,599 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 12:46:22,884 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:46:23,602 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 12:47:23,608 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 12:48:23,620 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 12:49:23,632 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:50:23,637 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 12:51:22,891 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:51:22,985 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 12:51:23,638 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 12:52:23,640 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 12:53:23,652 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 12:54:23,658 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 12:55:23,670 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1832ms
+2021-02-25 12:56:21,073 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 12:56:23,676 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 12:57:23,681 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 12:58:23,688 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 12:59:23,697 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 13:00:23,706 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 13:01:21,081 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:01:23,720 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 13:02:23,732 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 13:03:23,743 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 13:04:23,751 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 13:05:23,763 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 13:06:21,084 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:06:22,992 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 13:06:23,771 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 13:07:23,781 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 13:08:23,796 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 15ms
+2021-02-25 13:09:23,799 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 13:10:23,809 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 13:11:21,096 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:11:23,818 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 13:12:23,818 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 13:13:23,824 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 13:14:23,839 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 13:15:23,850 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 13:16:21,106 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:16:23,852 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 13:17:23,863 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 13:18:23,876 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 13:19:23,878 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 13:20:23,891 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 13:21:21,119 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:21:23,007 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 13:21:23,898 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 13:22:23,913 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 13:23:23,922 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 13:24:23,923 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 13:25:23,936 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 13:26:21,133 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:26:23,937 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 13:27:23,941 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 13:28:23,944 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 13:29:23,947 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 13:30:23,956 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 13:31:21,136 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:31:23,969 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 13:32:23,984 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 13:33:23,992 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 13:34:23,998 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 13:35:24,014 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 15ms
+2021-02-25 13:36:21,146 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:36:23,011 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 13:36:24,020 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 13:37:24,023 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 13:38:24,036 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 13:39:24,044 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 13:40:24,052 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 13:41:21,147 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:41:24,066 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 13:42:24,072 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 13:43:24,087 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 13:44:24,087 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 13:45:24,102 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 13:46:21,155 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:46:24,106 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 13:47:24,107 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 13:48:24,110 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 13:49:04,934 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 13:49:24,121 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 13:50:05,539 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 13:50:24,136 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 13:50:46,222 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 13:50:46,225 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 5588 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 13:50:46,225 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 13:50:46,980 INFO (GenericScope.java:288)- BeanFactory id=bc65946f-b1e1-30c5-aa7e-76395047d531
+2021-02-25 13:50:47,169 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 13:50:47,174 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 13:50:47,175 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 13:50:47,176 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 13:50:47,331 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 13:50:47,332 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1072 ms
+2021-02-25 13:50:47,829 INFO (WebApplicationImpl.java:815)- Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-02-25 13:50:47,872 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 13:50:47,873 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 13:50:47,939 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 13:50:47,939 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 13:50:48,256 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 13:50:50,700 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 13:50:50,820 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 13:50:50,836 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 13:50:50,857 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 13:50:51,655 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 13:50:51,656 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 13:50:51,656 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 13:50:51,656 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 13:50:51,713 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:50:52,445 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 13:50:52,445 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 13:50:52,446 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 13:50:52,446 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 13:50:52,446 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 13:50:52,446 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 13:50:52,446 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 13:50:52,538 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 13:50:52,541 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 13:50:52,543 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 13:50:52,547 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614232252546 with initial instances count: 2
+2021-02-25 13:50:52,566 INFO (DefaultEurekaServerContext.java:66)- Initializing ...
+2021-02-25 13:50:52,567 INFO (PeerEurekaNodes.java:187)- Adding new peer nodes [http://127.0.0.1:8001/eureka/]
+2021-02-25 13:50:52,570 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 13:50:52,570 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 13:50:52,571 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 13:50:52,571 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 13:50:52,615 INFO (PeerEurekaNodes.java:109)- Replica node URL:  http://127.0.0.1:8001/eureka/
+2021-02-25 13:50:52,620 INFO (AbstractInstanceRegistry.java:153)- Finished initializing remote region registries. All known remote regions: []
+2021-02-25 13:50:52,621 INFO (DefaultEurekaServerContext.java:73)- Initialized
+2021-02-25 13:50:52,626 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 13:50:52,671 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 13:50:52,672 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614232252672, current=UP, previous=STARTING]
+2021-02-25 13:50:52,674 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 13:50:52,676 INFO (EurekaServerBootstrap.java:97)- Setting the eureka configuration..
+2021-02-25 13:50:52,677 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 13:50:52,686 INFO (EurekaServerBootstrap.java:148)- isAws returned false
+2021-02-25 13:50:52,687 INFO (EurekaServerBootstrap.java:114)- Initialized server context
+2021-02-25 13:50:52,694 INFO (AbstractInstanceRegistry.java:266)- Registered instance CONFIG-SERVER/192.168.21.126:config-server:8011 with status UP (replication=true)
+2021-02-25 13:50:52,694 INFO (PeerAwareInstanceRegistryImpl.java:244)- Got 1 instances from neighboring DS node
+2021-02-25 13:50:52,694 INFO (PeerAwareInstanceRegistryImpl.java:245)- Renew threshold is: 1
+2021-02-25 13:50:52,695 INFO (PeerAwareInstanceRegistryImpl.java:256)- Changing status to UP
+2021-02-25 13:50:52,699 INFO (EurekaServerInitializerConfiguration.java:69)- Started Eureka Server
+2021-02-25 13:50:52,700 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 13:50:52,701 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 13:50:52,708 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 13:50:53,796 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.328 seconds (JVM running for 11.171)
+2021-02-25 13:50:55,587 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 13:50:55,588 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 13:50:55,589 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 13:51:05,775 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 13:51:52,709 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 13:52:52,715 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 13:53:52,729 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 13:54:05,079 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 13:54:05,083 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 11344 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 13:54:05,083 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 13:54:05,828 INFO (GenericScope.java:288)- BeanFactory id=bc65946f-b1e1-30c5-aa7e-76395047d531
+2021-02-25 13:54:06,016 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 13:54:06,023 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 13:54:06,023 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 13:54:06,023 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 13:54:06,183 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 13:54:06,184 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1066 ms
+2021-02-25 13:54:06,665 INFO (WebApplicationImpl.java:815)- Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-02-25 13:54:06,707 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 13:54:06,707 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 13:54:06,770 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 13:54:06,770 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 13:54:07,092 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 13:54:09,491 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 13:54:09,605 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 13:54:09,617 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 13:54:09,638 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 13:54:10,629 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 13:54:10,629 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 13:54:10,630 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 13:54:10,630 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 13:54:10,692 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:54:11,715 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 13:54:11,716 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 13:54:11,716 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 13:54:11,717 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 13:54:11,717 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 13:54:11,717 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 13:54:11,718 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 13:54:11,814 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 13:54:11,816 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 13:54:11,818 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 13:54:11,821 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614232451821 with initial instances count: 1
+2021-02-25 13:54:11,841 INFO (DefaultEurekaServerContext.java:66)- Initializing ...
+2021-02-25 13:54:11,843 INFO (PeerEurekaNodes.java:187)- Adding new peer nodes [http://127.0.0.1:8001/eureka/]
+2021-02-25 13:54:11,846 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 13:54:11,846 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 13:54:11,846 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 13:54:11,846 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 13:54:11,893 INFO (PeerEurekaNodes.java:109)- Replica node URL:  http://127.0.0.1:8001/eureka/
+2021-02-25 13:54:11,899 INFO (AbstractInstanceRegistry.java:153)- Finished initializing remote region registries. All known remote regions: []
+2021-02-25 13:54:11,899 INFO (DefaultEurekaServerContext.java:73)- Initialized
+2021-02-25 13:54:11,904 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 13:54:11,951 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 13:54:11,951 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614232451951, current=UP, previous=STARTING]
+2021-02-25 13:54:11,954 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 13:54:11,954 INFO (EurekaServerBootstrap.java:97)- Setting the eureka configuration..
+2021-02-25 13:54:11,955 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 13:54:11,967 INFO (EurekaServerBootstrap.java:148)- isAws returned false
+2021-02-25 13:54:11,968 INFO (EurekaServerBootstrap.java:114)- Initialized server context
+2021-02-25 13:54:11,973 INFO (AbstractInstanceRegistry.java:266)- Registered instance CONFIG-SERVER/192.168.21.126:config-server:8011 with status UP (replication=true)
+2021-02-25 13:54:11,974 INFO (PeerAwareInstanceRegistryImpl.java:244)- Got 1 instances from neighboring DS node
+2021-02-25 13:54:11,974 INFO (PeerAwareInstanceRegistryImpl.java:245)- Renew threshold is: 1
+2021-02-25 13:54:11,974 INFO (PeerAwareInstanceRegistryImpl.java:256)- Changing status to UP
+2021-02-25 13:54:11,979 INFO (EurekaServerInitializerConfiguration.java:69)- Started Eureka Server
+2021-02-25 13:54:11,981 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 13:54:11,983 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 13:54:11,988 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 13:54:13,069 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.705 seconds (JVM running for 11.564)
+2021-02-25 13:54:13,888 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 13:54:13,889 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 13:54:13,890 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 13:54:34,457 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 13:55:11,989 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 13:56:11,994 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 13:56:20,162 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 13:57:12,001 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 13:58:12,004 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 13:58:39,225 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 13:59:11,723 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 13:59:12,017 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 13:59:48,587 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:00:12,030 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 14:01:12,031 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 14:02:12,041 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 14:03:12,049 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 14:04:11,724 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:04:12,051 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 14:05:12,052 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 14:06:12,060 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 14:07:12,073 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 14:08:12,074 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 14:09:11,733 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:09:11,903 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 3
+2021-02-25 14:09:12,075 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 14:10:12,085 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 14:18:17,264 INFO (Version.java:21)- HV000001: Hibernate Validator 6.1.7.Final
+2021-02-25 14:18:17,267 INFO (StartupInfoLogger.java:55)- Starting ConfigServerApplication using Java 1.8.0_212 on LAPTOP-J359LH0N with PID 356 (D:\work\program\my\myinfo\config-server\target\classes started by SY in D:\work\program\my\myinfo)
+2021-02-25 14:18:17,267 INFO (SpringApplication.java:664)- The following profiles are active: native
+2021-02-25 14:18:18,021 INFO (GenericScope.java:288)- BeanFactory id=bc65946f-b1e1-30c5-aa7e-76395047d531
+2021-02-25 14:18:18,211 INFO (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8011 (http)
+2021-02-25 14:18:18,218 INFO (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8011"]
+2021-02-25 14:18:18,219 INFO (DirectJDKLog.java:173)- Starting service [Tomcat]
+2021-02-25 14:18:18,219 INFO (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-25 14:18:18,378 INFO (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2021-02-25 14:18:18,379 INFO (ServletWebServerApplicationContext.java:289)- Root WebApplicationContext: initialization completed in 1076 ms
+2021-02-25 14:18:18,845 INFO (WebApplicationImpl.java:815)- Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-02-25 14:18:18,886 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 14:18:18,887 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 14:18:18,951 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 14:18:18,951 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 14:18:19,263 INFO (ExecutorConfigurationSupport.java:181)- Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-25 14:18:21,571 INFO (DiscoveryClientOptionalArgsConfiguration.java:87)- Eureka HTTP Client uses Jersey
+2021-02-25 14:18:21,687 WARN (LoadBalancerCacheAutoConfiguration.java:82)- Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-25 14:18:21,699 INFO (InstanceInfoFactory.java:67)- Setting initial instance status as: STARTING
+2021-02-25 14:18:21,721 INFO (DiscoveryClient.java:372)- Initializing Eureka in region us-east-1
+2021-02-25 14:18:22,486 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 14:18:22,486 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 14:18:22,486 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 14:18:22,487 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 14:18:22,539 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:18:23,199 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 14:18:23,199 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 14:18:23,200 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 14:18:23,200 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 14:18:23,200 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 14:18:23,200 INFO (DiscoveryClient.java:1013)- Application version is -1: true
+2021-02-25 14:18:23,201 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 14:18:23,325 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 14:18:23,326 INFO (DiscoveryClient.java:1321)- Starting heartbeat executor: renew interval is: 30
+2021-02-25 14:18:23,328 INFO (InstanceInfoReplicator.java:60)- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-25 14:18:23,331 INFO (DiscoveryClient.java:492)- Discovery Client initialized at timestamp 1614233903331 with initial instances count: 0
+2021-02-25 14:18:23,351 INFO (DefaultEurekaServerContext.java:66)- Initializing ...
+2021-02-25 14:18:23,353 INFO (PeerEurekaNodes.java:187)- Adding new peer nodes [http://127.0.0.1:8001/eureka/]
+2021-02-25 14:18:23,356 INFO (DiscoveryJerseyProvider.java:70)- Using JSON encoding codec LegacyJacksonJson
+2021-02-25 14:18:23,356 INFO (DiscoveryJerseyProvider.java:71)- Using JSON decoding codec LegacyJacksonJson
+2021-02-25 14:18:23,357 INFO (DiscoveryJerseyProvider.java:80)- Using XML encoding codec XStreamXml
+2021-02-25 14:18:23,357 INFO (DiscoveryJerseyProvider.java:81)- Using XML decoding codec XStreamXml
+2021-02-25 14:18:23,402 INFO (PeerEurekaNodes.java:109)- Replica node URL:  http://127.0.0.1:8001/eureka/
+2021-02-25 14:18:23,407 INFO (AbstractInstanceRegistry.java:153)- Finished initializing remote region registries. All known remote regions: []
+2021-02-25 14:18:23,408 INFO (DefaultEurekaServerContext.java:73)- Initialized
+2021-02-25 14:18:23,412 INFO (EndpointLinksResolver.java:58)- Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-02-25 14:18:23,458 INFO (EurekaServiceRegistry.java:41)- Registering application CONFIG-SERVER with eureka with status UP
+2021-02-25 14:18:23,459 INFO (DiscoveryClient.java:1352)- Saw local status change event StatusChangeEvent [timestamp=1614233903459, current=UP, previous=STARTING]
+2021-02-25 14:18:23,461 INFO (DiscoveryClient.java:873)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011: registering service...
+2021-02-25 14:18:23,462 INFO (EurekaServerBootstrap.java:97)- Setting the eureka configuration..
+2021-02-25 14:18:23,464 INFO (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8011"]
+2021-02-25 14:18:23,472 INFO (EurekaServerBootstrap.java:148)- isAws returned false
+2021-02-25 14:18:23,473 INFO (EurekaServerBootstrap.java:114)- Initialized server context
+2021-02-25 14:18:23,485 INFO (TomcatWebServer.java:220)- Tomcat started on port(s): 8011 (http) with context path ''
+2021-02-25 14:18:23,486 INFO (EurekaAutoServiceRegistration.java:144)- Updating port to 8011
+2021-02-25 14:18:23,530 INFO (DiscoveryClient.java:882)- DiscoveryClient_CONFIG-SERVER/192.168.21.126:config-server:8011 - registration status: 204
+2021-02-25 14:18:24,499 INFO (StartupInfoLogger.java:61)- Started ConfigServerApplication in 9.141 seconds (JVM running for 10.995)
+2021-02-25 14:18:26,020 INFO (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-25 14:18:26,020 INFO (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2021-02-25 14:18:26,021 INFO (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2021-02-25 14:18:40,899 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:18:53,350 INFO (DiscoveryClient.java:1007)- Disable delta property : false
+2021-02-25 14:18:53,351 INFO (DiscoveryClient.java:1008)- Single vip registry refresh property : null
+2021-02-25 14:18:53,352 INFO (DiscoveryClient.java:1009)- Force full registry fetch : false
+2021-02-25 14:18:53,353 INFO (DiscoveryClient.java:1010)- Application is null : false
+2021-02-25 14:18:53,353 INFO (DiscoveryClient.java:1011)- Registered Applications size is zero : true
+2021-02-25 14:18:53,353 INFO (DiscoveryClient.java:1013)- Application version is -1: false
+2021-02-25 14:18:53,353 INFO (DiscoveryClient.java:1097)- Getting all instance registry info from the eureka server
+2021-02-25 14:18:53,379 INFO (DiscoveryClient.java:1106)- The response status is 200
+2021-02-25 14:18:53,484 INFO (AbstractInstanceRegistry.java:266)- Registered instance CONFIG-SERVER/192.168.21.126:config-server:8011 with status UP (replication=true)
+2021-02-25 14:18:53,484 INFO (PeerAwareInstanceRegistryImpl.java:244)- Got 1 instances from neighboring DS node
+2021-02-25 14:18:53,484 INFO (PeerAwareInstanceRegistryImpl.java:245)- Renew threshold is: 1
+2021-02-25 14:18:53,485 INFO (PeerAwareInstanceRegistryImpl.java:256)- Changing status to UP
+2021-02-25 14:18:53,489 INFO (EurekaServerInitializerConfiguration.java:69)- Started Eureka Server
+2021-02-25 14:19:53,494 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 14:20:53,504 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 14:21:53,515 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 14:22:53,526 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 14:23:21,024 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:23:23,216 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:23:53,536 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 14:24:53,545 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 14:25:53,552 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 14:26:12,779 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:26:53,553 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 14:26:56,759 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:27:53,562 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 8ms
+2021-02-25 14:28:23,224 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:28:53,575 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 14:29:53,586 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 14:30:29,622 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:30:53,596 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 14:31:03,628 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:31:53,599 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 14:32:53,610 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 11ms
+2021-02-25 14:33:23,235 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:33:23,422 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 1
+2021-02-25 14:33:53,615 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 14:34:45,299 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:34:53,622 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 14:35:53,635 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 14:36:33,507 INFO (NativeEnvironmentRepository.java:280)- Adding property source: Config resource 'class path resource [shared/db-service-dev.yml]' via location 'classpath:/shared/'
+2021-02-25 14:36:53,650 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 14:37:53,664 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 14:38:23,246 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:38:53,671 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 7ms
+2021-02-25 14:39:53,675 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 14:40:53,677 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 14:41:53,691 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 14:42:53,694 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 14:43:23,262 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:43:53,704 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 10ms
+2021-02-25 14:44:53,707 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 14:45:53,721 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 14:46:53,726 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 14:47:53,727 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 14:48:23,265 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:48:23,423 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 3
+2021-02-25 14:48:53,740 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 12ms
+2021-02-25 14:49:53,741 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 14:50:53,754 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 14:51:53,769 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 14ms
+2021-02-25 14:52:53,770 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 1ms
+2021-02-25 14:53:23,273 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:53:53,774 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 14:54:53,788 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
+2021-02-25 14:55:53,790 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 14:56:53,797 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms

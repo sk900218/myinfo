@@ -1,0 +1,12 @@
+server:
+  port: 8001
+
+eureka:
+  client:
+    service-url:
+      # 配置Eureka服务器地址
+      defaultZone: http://127.0.0.1:8001/eureka
+    # 是否将自己注册到注册中心
+    register-with-eureka: false
+    # 是否需要搜索服务信息
+    fetch-registry: false

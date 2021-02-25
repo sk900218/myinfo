@@ -1,0 +1,21 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8001/eureka/
+  instance:
+    prefer-ip-address: true
+server:
+  port: 8011
+spring:
+  application:
+    # 服务名称
+    name: config-server
+  profiles:
+    # 配置文件在本地
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          # 配置文件目录
+          search-locations: classpath:/shared
