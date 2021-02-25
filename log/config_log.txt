@@ -918,3 +918,15 @@
 2021-02-25 14:54:53,788 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 13ms
 2021-02-25 14:55:53,790 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
 2021-02-25 14:56:53,797 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 6ms
+2021-02-25 14:57:53,800 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 3ms
+2021-02-25 14:58:23,290 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 14:58:53,803 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 2ms
+2021-02-25 14:59:53,812 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 15:00:53,817 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 15:01:53,817 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 0ms
+2021-02-25 15:02:53,822 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms
+2021-02-25 15:03:23,304 INFO (ConfigClusterResolver.java:43)- Resolving eureka endpoints via configuration
+2021-02-25 15:03:23,431 INFO (PeerAwareInstanceRegistryImpl.java:552)- Current renewal threshold is : 3
+2021-02-25 15:03:53,828 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 5ms
+2021-02-25 15:04:53,837 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 9ms
+2021-02-25 15:05:53,842 INFO (AbstractInstanceRegistry.java:1247)- Running the evict task with compensationTime 4ms

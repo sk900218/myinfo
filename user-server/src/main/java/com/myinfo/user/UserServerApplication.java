@@ -9,8 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableEurekaClient
-@MapperScan({"com.myinfo.base.mapper.*"})
 @SpringBootApplication
+@MapperScan({"com.myinfo.base.mapper.*"})
 @ComponentScan("com.myinfo")
 @EnableJpaRepositories(basePackages = "com.myinfo.base.dao")
 @EntityScan(basePackages = "com.myinfo.base.entity")
