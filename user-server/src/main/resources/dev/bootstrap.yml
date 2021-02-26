@@ -2,7 +2,7 @@ server:
   port: 8031
 spring:
   application:
-    name: user-service
+    name: user-server
   profiles:
     active: dev
   cloud:
@@ -21,6 +21,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8001/eureka/
-      fetch-registry: true
+    # 向服务器注册自己
+    register-with-eureka: true
+    # 拉取其他服务器
+    fetch-registry: true
   instance:
     prefer-ip-address: true

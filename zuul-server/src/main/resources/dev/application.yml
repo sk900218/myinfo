@@ -2,19 +2,21 @@ server:
   port: 8080
 spring:
   application:
-    name: zuul-service
+    name: zuul-server
   main:
     allow-bean-definition-overriding: true
 eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8001/eureka/
+    register-with-eureka: true
+    fetch-registry: true
   instance:
     prefer-ip-address: true
 feign:
-  # 断路器
   hystrix:
     enabled: true
+# 断路器
 hystrix:
   command:
     default:
@@ -38,20 +40,20 @@ zuul:
       connections: 20000
   routes:
     # 用户端
-    userservice:
+    user-server:
       path: /user/**
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
-      serviceId: user-service
+      serviceId: user-server
       stripPrefix: true
     # 管理端
-    managerservice:
+    manager-server:
       path: /manager/**
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
-      serviceId: manager-service
+      serviceId: manager-server
       stripPrefix: true
     # 应用端
-    applyservice:
+    apply-server:
       path: /apply/**
       sensitiveHeaders: Cookie,Set-Cookie,Authorization
-      serviceId: apply-service
+      serviceId: apply-server
       stripPrefix: true
