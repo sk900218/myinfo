@@ -12,6 +12,8 @@ import com.myinfo.base.valid.ValidUtil;
 import com.myinfo.base.valid.builder.StringValiRuleBuilder;
 import com.myinfo.user.bean.req.LoginReq;
 import com.myinfo.user.bean.req.RegisterReq;
+import com.myinfo.user.bean.res.LoginRes;
+import com.myinfo.user.service.AuthService;
 import com.myinfo.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,9 +27,11 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private SysUserDao sysUserDao;
+    @Autowired
+    private AuthService authService;
 
     @Override
-    public SysUser login(LoginReq req) throws ApiException {
+    public LoginRes login(LoginReq req) throws ApiException {
         /*校验参数*/
         List<ValidParam> ruleList = new ArrayList<>();
         ruleList.add(new StringValiRuleBuilder("account", "账号").notNull().maxSize("账号超出规定长度", 50));
@@ -46,7 +50,15 @@ public class UserServiceImpl implements UserService {
             throw new ApiException(ResCode.LOGIC_ERROR, "密码错误");
         }
 
-        return sysUser;
+        /*生成令牌*/
+        String token = authService.saveToken(sysUser);
+
+        /*返回项*/
+        LoginRes res = new LoginRes();
+        res.setToken(token);
+        res.setSysUser(sysUser);
+
+        return res;
     }
 
     @Override

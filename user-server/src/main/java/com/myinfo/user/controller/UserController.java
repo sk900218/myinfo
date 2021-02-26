@@ -2,10 +2,10 @@ package com.myinfo.user.controller;
 
 import com.myinfo.base.bean.ResVo;
 import com.myinfo.base.controller.BaseController;
-import com.myinfo.base.entity.SysUser;
 import com.myinfo.base.exception.ApiException;
 import com.myinfo.user.bean.req.LoginReq;
 import com.myinfo.user.bean.req.RegisterReq;
+import com.myinfo.user.bean.res.LoginRes;
 import com.myinfo.user.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -24,9 +24,9 @@ public class UserController extends BaseController {
 
     @ApiOperation(value = "用户登录")
     @PostMapping("/login")
-    public ResVo<SysUser> register(LoginReq req) {
+    public ResVo<LoginRes> login(LoginReq req) {
         try {
-            SysUser result = userService.login(req);
+            LoginRes result = userService.login(req);
             return success(result);
         } catch (ApiException e) {
             return e.getResVo();

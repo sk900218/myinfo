@@ -1,6 +1,9 @@
 server:
   port: 8080
 spring:
+  # 引入外部配置文件
+  profiles:
+    include: auth
   application:
     name: zuul-server
   main:

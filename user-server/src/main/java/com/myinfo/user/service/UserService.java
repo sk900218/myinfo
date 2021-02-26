@@ -1,10 +1,10 @@
 package com.myinfo.user.service;
 
 
-import com.myinfo.base.entity.SysUser;
 import com.myinfo.base.exception.ApiException;
 import com.myinfo.user.bean.req.LoginReq;
 import com.myinfo.user.bean.req.RegisterReq;
+import com.myinfo.user.bean.res.LoginRes;
 
 /**
  * 用户管理
@@ -17,7 +17,7 @@ public interface UserService {
      * @param req
      * @throws ApiException
      */
-    public SysUser login(LoginReq req) throws ApiException;
+    public LoginRes login(LoginReq req) throws ApiException;
 
     /**
      * 用户注册

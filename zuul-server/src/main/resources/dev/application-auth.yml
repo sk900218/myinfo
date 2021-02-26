@@ -1,0 +1,5 @@
+## 鉴权过滤的url
+auth:
+  filter:
+    - '/user/login' #登录
+    - '/user/register' #注册
