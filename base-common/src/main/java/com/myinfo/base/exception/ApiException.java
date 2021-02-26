@@ -17,6 +17,10 @@ public class ApiException extends Exception {
         this.resVo = new ResVo(ResCode.SYSTEM_ERROR);
     }
 
+    public ApiException(ResVo resVo) {
+        this.resVo = resVo;
+    }
+
     public ApiException(ResCode resCode) {
         this.resVo = new ResVo(resCode);
     }

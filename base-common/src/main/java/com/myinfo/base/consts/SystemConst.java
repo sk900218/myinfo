@@ -11,4 +11,7 @@ public class SystemConst {
     //密码散列次数
     public static final int PASSWORD_HASH_NUMBER = 1024;
 
+    /*服务相关*/
+    //用户服务名称
+    public static final String EUREKA_USER_SERVER = "user-server";
 }
