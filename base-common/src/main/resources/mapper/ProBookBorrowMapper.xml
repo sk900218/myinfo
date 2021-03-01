@@ -4,14 +4,13 @@
   <resultMap id="BaseResultMap" type="com.myinfo.base.entity.ProBookBorrow">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="book_id" jdbcType="VARCHAR" property="bookId" />
-    <result column="book_name" jdbcType="VARCHAR" property="bookName" />
     <result column="user_id" jdbcType="VARCHAR" property="userId" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="return_time" jdbcType="TIMESTAMP" property="returnTime" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, book_id, book_name, user_id, user_name, create_time, return_time
+    id, book_id, user_id, user_name, create_time, return_time
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
@@ -24,10 +23,10 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.myinfo.base.entity.ProBookBorrow">
-    insert into pro_book_borrow (id, book_id, book_name, 
+    insert into pro_book_borrow (id, book_id,
       user_id, user_name, create_time, 
       return_time)
-    values (#{id,jdbcType=VARCHAR}, #{bookId,jdbcType=VARCHAR}, #{bookName,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=VARCHAR}, #{bookId,jdbcType=VARCHAR},
       #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
       #{returnTime,jdbcType=TIMESTAMP})
   </insert>
@@ -39,9 +38,6 @@
       </if>
       <if test="bookId != null">
         book_id,
-      </if>
-      <if test="bookName != null">
-        book_name,
       </if>
       <if test="userId != null">
         user_id,
@@ -63,9 +59,6 @@
       <if test="bookId != null">
         #{bookId,jdbcType=VARCHAR},
       </if>
-      <if test="bookName != null">
-        #{bookName,jdbcType=VARCHAR},
-      </if>
       <if test="userId != null">
         #{userId,jdbcType=VARCHAR},
       </if>
@@ -86,9 +79,6 @@
       <if test="bookId != null">
         book_id = #{bookId,jdbcType=VARCHAR},
       </if>
-      <if test="bookName != null">
-        book_name = #{bookName,jdbcType=VARCHAR},
-      </if>
       <if test="userId != null">
         user_id = #{userId,jdbcType=VARCHAR},
       </if>
@@ -107,7 +97,6 @@
   <update id="updateByPrimaryKey" parameterType="com.myinfo.base.entity.ProBookBorrow">
     update pro_book_borrow
     set book_id = #{bookId,jdbcType=VARCHAR},
-      book_name = #{bookName,jdbcType=VARCHAR},
       user_id = #{userId,jdbcType=VARCHAR},
       user_name = #{userName,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},
@@ -117,14 +106,13 @@
   <resultMap id="BaseResultMap" type="com.myinfo.base.entity.ProBookBorrow">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="book_id" jdbcType="VARCHAR" property="bookId" />
-    <result column="book_name" jdbcType="VARCHAR" property="bookName" />
     <result column="user_id" jdbcType="VARCHAR" property="userId" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="return_time" jdbcType="TIMESTAMP" property="returnTime" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, book_id, book_name, user_id, user_name, create_time, return_time
+    id, book_id, user_id, user_name, create_time, return_time
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
@@ -137,10 +125,10 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.myinfo.base.entity.ProBookBorrow">
-    insert into pro_book_borrow (id, book_id, book_name, 
+    insert into pro_book_borrow (id, book_id,
       user_id, user_name, create_time, 
       return_time)
-    values (#{id,jdbcType=VARCHAR}, #{bookId,jdbcType=VARCHAR}, #{bookName,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=VARCHAR}, #{bookId,jdbcType=VARCHAR},
       #{userId,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
       #{returnTime,jdbcType=TIMESTAMP})
   </insert>
@@ -152,9 +140,6 @@
       </if>
       <if test="bookId != null">
         book_id,
-      </if>
-      <if test="bookName != null">
-        book_name,
       </if>
       <if test="userId != null">
         user_id,
@@ -176,9 +161,6 @@
       <if test="bookId != null">
         #{bookId,jdbcType=VARCHAR},
       </if>
-      <if test="bookName != null">
-        #{bookName,jdbcType=VARCHAR},
-      </if>
       <if test="userId != null">
         #{userId,jdbcType=VARCHAR},
       </if>
@@ -199,9 +181,6 @@
       <if test="bookId != null">
         book_id = #{bookId,jdbcType=VARCHAR},
       </if>
-      <if test="bookName != null">
-        book_name = #{bookName,jdbcType=VARCHAR},
-      </if>
       <if test="userId != null">
         user_id = #{userId,jdbcType=VARCHAR},
       </if>
@@ -220,7 +199,6 @@
   <update id="updateByPrimaryKey" parameterType="com.myinfo.base.entity.ProBookBorrow">
     update pro_book_borrow
     set book_id = #{bookId,jdbcType=VARCHAR},
-      book_name = #{bookName,jdbcType=VARCHAR},
       user_id = #{userId,jdbcType=VARCHAR},
       user_name = #{userName,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},

@@ -24,10 +24,6 @@ public class ProBookBorrow {
     @Column(name = "book_id", nullable = false)
     private String bookId;
 
-    @ApiModelProperty("图书名称")
-    @Column(name = "book_name", nullable = false)
-    private String bookName;
-
     @ApiModelProperty("借阅人id")
     @Column(name = "user_id", nullable = false)
     private String userId;

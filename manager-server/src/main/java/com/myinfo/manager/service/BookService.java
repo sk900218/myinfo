@@ -2,19 +2,19 @@ package com.myinfo.manager.service;
 
 
 import com.myinfo.base.bean.PageRequestVo;
+import com.myinfo.base.bean.PageVo;
 import com.myinfo.base.entity.ProBook;
 import com.myinfo.base.entity.ProBookBorrow;
 import com.myinfo.base.exception.ApiException;
+import com.myinfo.base.service.BaseService;
 import com.myinfo.manager.bean.req.BookBorrowListReq;
-import com.myinfo.manager.bean.req.BookReq;
-
-import java.util.List;
+import com.myinfo.manager.bean.req.BookUpdateReq;
 
 /**
  * 图书管理
  * @author 盛凯 2021-2-26
  */
-public interface BookService {
+public interface BookService extends BaseService {
 
     /**
      * 增加图书
@@ -28,7 +28,7 @@ public interface BookService {
      * @param req
      * @throws ApiException
      */
-    public ProBook update(BookReq req) throws ApiException;
+    public ProBook update(BookUpdateReq req) throws ApiException;
 
     /**
      * 删除图书
@@ -43,13 +43,13 @@ public interface BookService {
      * @return
      * @throws ApiException
      */
-    public List<ProBook> queryList(PageRequestVo vo) throws ApiException;
+    public PageVo<ProBook> queryList(PageRequestVo vo) throws ApiException;
 
     /**
      * 查询图书借阅信息列表
-     * @param vo
+     * @param req
      * @return
      * @throws ApiException
      */
-    public List<ProBookBorrow> queryBorrowList(BookBorrowListReq vo) throws ApiException;
+    public PageVo<ProBookBorrow> queryBorrowList(BookBorrowListReq req) throws ApiException;
 }

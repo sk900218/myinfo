@@ -8,7 +8,7 @@ import javax.persistence.Column;
 
 @Data
 @ApiModel("图书")
-public class BookReq {
+public class BookUpdateReq {
 
     @ApiModelProperty("UUID")
     private String id;
