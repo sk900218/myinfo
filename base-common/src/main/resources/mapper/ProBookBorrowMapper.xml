@@ -103,4 +103,24 @@
       return_time = #{returnTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+
+  <!-- 随机获取一条未归还的借阅信息 -->
+  <select id="findRandom" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+        <include refid="Base_Column_List" />
+    from
+     (
+      select
+        *,
+        rand() as r
+      from
+        pro_book_borrow bo
+      where
+        user_id = #{userId}
+        and return_time is null
+        and exists ( select * from pro_book b where b.id = bo.book_id and b.borrow_status = 1 )
+      order by r
+      limit 1
+    ) t
+  </select>
 </mapper>

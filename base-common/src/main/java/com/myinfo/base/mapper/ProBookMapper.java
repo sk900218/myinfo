@@ -1,7 +1,11 @@
 package com.myinfo.base.mapper;
 
 import com.myinfo.base.entity.ProBook;
+import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
+@Mapper
 public interface ProBookMapper {
     int deleteByPrimaryKey(String id);
 
@@ -14,4 +18,11 @@ public interface ProBookMapper {
     int updateByPrimaryKeySelective(ProBook record);
 
     int updateByPrimaryKey(ProBook record);
+
+    /**
+     * 随机获取N本书
+     * @param num
+     * @return
+     */
+    List<ProBook> findRandomByNumber(Integer num);
 }

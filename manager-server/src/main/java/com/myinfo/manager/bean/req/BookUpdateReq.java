@@ -4,17 +4,14 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-import javax.persistence.Column;
-
 @Data
 @ApiModel("图书")
 public class BookUpdateReq {
 
-    @ApiModelProperty("UUID")
+    @ApiModelProperty(value = "UUID", required = true)
     private String id;
 
-    @ApiModelProperty("书名")
-    @Column(name = "name", nullable = false)
+    @ApiModelProperty(value = "书名", required = true)
     private String name;
 
 }

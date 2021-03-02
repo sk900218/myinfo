@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication(scanBasePackages = "com.myinfo.*")
-@MapperScan({"com.myinfo.base.mapper.*"})
+@MapperScan({"com.myinfo.base.mapper"})
 @EnableJpaRepositories(basePackages = "com.myinfo.base.dao")
 @EntityScan(basePackages = "com.myinfo.base.entity")
 public class ManagerServerApplication {

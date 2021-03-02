@@ -103,4 +103,12 @@
       borrow_status = #{borrowStatus,jdbcType=INTEGER}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+
+  <!-- 随机获取N本书 -->
+  <select id="findRandomByNumber" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+        <include refid="Base_Column_List" />
+    from
+        (select *,rand() as r from pro_book where borrow_status = 0 order by r limit ${num}) t
+  </select>
 </mapper>
