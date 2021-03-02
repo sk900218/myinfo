@@ -1,6 +1,5 @@
 package com.myinfo.manager.service.impl;
 
-import com.myinfo.base.bean.PageRequestVo;
 import com.myinfo.base.bean.PageVo;
 import com.myinfo.base.dao.ProBookBorrowDao;
 import com.myinfo.base.dao.ProBookDao;
@@ -16,6 +15,7 @@ import com.myinfo.base.valid.ValidUtil;
 import com.myinfo.base.valid.builder.IntegerValiRuleBuilder;
 import com.myinfo.base.valid.builder.StringValiRuleBuilder;
 import com.myinfo.manager.bean.req.BookBorrowListReq;
+import com.myinfo.manager.bean.req.BookListReq;
 import com.myinfo.manager.bean.req.BookUpdateReq;
 import com.myinfo.manager.service.BookService;
 import org.apache.commons.lang3.StringUtils;
@@ -100,22 +100,21 @@ public class BookServiceImpl extends BaseServiceImpl implements BookService {
     }
 
     @Override
-    public PageVo<ProBook> queryList(PageRequestVo vo) throws ApiException {
+    public PageVo<ProBook> queryList(BookListReq req) throws ApiException {
         /*校验参数*/
         List<ValidParam> ruleList = new ArrayList<>();
         ruleList.add(new IntegerValiRuleBuilder("page", "当前页").notNull());
         ruleList.add(new IntegerValiRuleBuilder("rows", "行数").notNull().maxVal(1000));
-        ValidUtil.valiParams(vo, ruleList);
+        ValidUtil.valiParams(req, ruleList);
 
         /*分页查询*/
-        Pageable pageable = PageRequest.of(vo.getPage() - 1, vo.getRows()
-                , Sort.by(Sort.Order.desc(new ProBook().getCreateTime().getClass().getSimpleName())));
-        Page<ProBook> pages = proBookDao.findAll(pageable);
+        Pageable pageable = PageRequest.of(req.getPage() - 1, req.getRows(), Sort.by(Sort.Order.desc("createTime")));
+        Page<ProBook> pages = proBookDao.findAllByBookName(req.getBookName(), pageable);
 
         /*结果集封装*/
         PageVo<ProBook> result = new PageVo<>();
-        result.setPage(vo.getPage() + 1);
-        result.setRows(vo.getRows());
+        result.setPage(req.getPage());
+        result.setRows(req.getRows());
         result.setTotal(pages.getTotalElements());
         result.setMaxPage(pages.getTotalPages());
         result.setData(pages.getContent());
@@ -133,8 +132,7 @@ public class BookServiceImpl extends BaseServiceImpl implements BookService {
         ValidUtil.valiParams(req, ruleList);
 
         /*分页查询*/
-        Pageable pageable = PageRequest.of(req.getPage() - 1, req.getRows()
-                , Sort.by(Sort.Order.desc(new ProBookBorrow().getCreateTime().getClass().getSimpleName())));
+        Pageable pageable = PageRequest.of(req.getPage() - 1, req.getRows(), Sort.by(Sort.Order.desc("createTime")));
         Page<ProBookBorrow> pages = proBookBorrowDao.findAllByBookId(req.getBookId(), pageable);
 
         /*结果集封装*/

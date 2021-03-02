@@ -1,13 +1,13 @@
 package com.myinfo.manager.service;
 
 
-import com.myinfo.base.bean.PageRequestVo;
 import com.myinfo.base.bean.PageVo;
 import com.myinfo.base.entity.ProBook;
 import com.myinfo.base.entity.ProBookBorrow;
 import com.myinfo.base.exception.ApiException;
 import com.myinfo.base.service.BaseService;
 import com.myinfo.manager.bean.req.BookBorrowListReq;
+import com.myinfo.manager.bean.req.BookListReq;
 import com.myinfo.manager.bean.req.BookUpdateReq;
 
 /**
@@ -39,11 +39,11 @@ public interface BookService extends BaseService {
 
     /**
      * 查询图书列表
-     * @param vo
+     * @param req
      * @return
      * @throws ApiException
      */
-    public PageVo<ProBook> queryList(PageRequestVo vo) throws ApiException;
+    public PageVo<ProBook> queryList(BookListReq req) throws ApiException;
 
     /**
      * 查询图书借阅信息列表

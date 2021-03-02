@@ -1,6 +1,5 @@
 package com.myinfo.manager.controller;
 
-import com.myinfo.base.bean.PageRequestVo;
 import com.myinfo.base.bean.PageVo;
 import com.myinfo.base.bean.ResVo;
 import com.myinfo.base.controller.BaseController;
@@ -8,6 +7,7 @@ import com.myinfo.base.entity.ProBook;
 import com.myinfo.base.entity.ProBookBorrow;
 import com.myinfo.base.exception.ApiException;
 import com.myinfo.manager.bean.req.BookBorrowListReq;
+import com.myinfo.manager.bean.req.BookListReq;
 import com.myinfo.manager.bean.req.BookUpdateReq;
 import com.myinfo.manager.service.BookService;
 import io.swagger.annotations.Api;
@@ -64,9 +64,9 @@ public class BookController extends BaseController {
 
     @ApiOperation(value = "查询图书列表")
     @GetMapping("/list")
-    public ResVo<PageVo<ProBook>> list(PageRequestVo vo) {
+    public ResVo<PageVo<ProBook>> list(BookListReq req) {
         try {
-            PageVo<ProBook> result = bookService.queryList(vo);
+            PageVo<ProBook> result = bookService.queryList(req);
             return success(result);
         } catch (ApiException e) {
             return e.getResVo();
