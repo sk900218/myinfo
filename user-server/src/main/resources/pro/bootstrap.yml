@@ -1,0 +1,29 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: user-server
+  profiles:
+    active: pro
+  cloud:
+    config:
+      # 应用名
+      name: db-service
+      # 环境名
+      profile: pro
+      discovery:
+        # 开启 Config 服务发现与注册
+        enabled: true
+        # 指定 server
+        service-id: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8001/eureka/
+    # 向服务器注册自己
+    register-with-eureka: true
+    # 拉取其他服务器
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
