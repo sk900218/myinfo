@@ -54,4 +54,5 @@ public class GsonUtils {
         JsonElement je = new JsonParser().parse(json);
         return buildFormat().toJson(je).toString();
     }
+
 }

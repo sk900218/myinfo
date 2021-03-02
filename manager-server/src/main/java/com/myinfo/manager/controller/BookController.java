@@ -15,6 +15,9 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("book")
@@ -23,10 +26,12 @@ public class BookController extends BaseController {
 
     @Autowired
     private BookService bookService;
+    @Autowired
+    private RestTemplate restTemplate;
 
     @ApiOperation(value = "增加图书")
     @PostMapping
-    public ResVo<ProBook> save(@ApiParam(value = "书名", required = true) @RequestParam("name") String name) {
+    public ResVo<ProBook> save(@ApiParam(value = "书名", required = true) @RequestParam("name") String name, HttpServletRequest request) {
         try {
             ProBook result = bookService.save(name);
             return success(result);

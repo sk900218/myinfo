@@ -6,6 +6,7 @@ import com.myinfo.base.entity.SysUser;
 import com.myinfo.base.enums.ResCode;
 import com.myinfo.base.exception.ApiException;
 import com.myinfo.base.support.RedisSupport;
+import com.myinfo.base.utils.GsonUtils;
 import com.myinfo.base.utils.TokenUtils;
 import com.myinfo.user.service.AuthService;
 import org.apache.commons.lang3.StringUtils;
@@ -20,22 +21,24 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public String saveToken(SysUser sysUser) {
-        String token = TokenUtils.buildToken();
+        String token = TokenUtils.buildToken().toUpperCase();
         //暂不进行单点登录限制，允许多端登录
         String key = SessionConst.AUTH_TOKEN + "_" + token;
-        redisSupport.set(key, sysUser, SessionConst.AUTH_TOKEN_SECONOD);
+        redisSupport.set(key, GsonUtils.objToJson(sysUser), SessionConst.AUTH_TOKEN_SECONOD);
         return token;
     }
 
     @Override
     public SysUser getToken(String token) {
-        String key = SessionConst.AUTH_TOKEN + "_" + token;
-        SysUser sysUser = (SysUser)redisSupport.get(key);
-        if(sysUser != null) {
+        String key = SessionConst.AUTH_TOKEN + "_" + token.toUpperCase();
+        String json = (String)redisSupport.get(key);
+        if(json != null) {
+            SysUser sysUser = GsonUtils.buildFormat().fromJson(json, SysUser.class);
             //取出的同时续约
-            redisSupport.set(key, sysUser, SessionConst.AUTH_TOKEN_SECONOD);
+            redisSupport.set(key, GsonUtils.objToJson(sysUser), SessionConst.AUTH_TOKEN_SECONOD);
+            return sysUser;
         }
-        return sysUser;
+        return null;
     }
 
     @Override

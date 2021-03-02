@@ -1,11 +1,14 @@
 package com.myinfo.base.support;
 
+import com.google.gson.reflect.TypeToken;
 import com.myinfo.base.bean.ResVo;
 import com.myinfo.base.consts.SystemConst;
 import com.myinfo.base.entity.SysUser;
 import com.myinfo.base.enums.ResCode;
 import com.myinfo.base.exception.ApiException;
+import com.myinfo.base.utils.GsonUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Component;
@@ -25,6 +28,7 @@ import java.util.Enumeration;
 @Component
 public class AuthSupport {
 
+    @Autowired
     public RestTemplate restTemplate;
 
     /**
@@ -44,7 +48,8 @@ public class AuthSupport {
         }
         ResVo<SysUser> resVo = null;
         try {
-            resVo = restTemplate.postForObject("http://" + SystemConst.EUREKA_USER_SERVER + "/auth/token/valid", new HttpEntity<String>(headers), ResVo.class);
+            String json = restTemplate.postForObject("http://" + SystemConst.EUREKA_USER_SERVER + "/auth/token/valid", new HttpEntity<String>(headers), String.class);
+            resVo = GsonUtils.buildFormat().fromJson(json, new TypeToken<ResVo<SysUser>>(){}.getType());
         } catch (RestClientException e) {
             log.error("读取用户服务发生异常");
             e.printStackTrace();
