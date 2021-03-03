@@ -35,10 +35,10 @@ public class UserController extends BaseController {
 
     @ApiOperation(value = "用户注册")
     @PostMapping("/register")
-    public ResVo register(RegisterReq req) {
+    public ResVo<String> register(RegisterReq req) {
         try {
-            userService.register(req);
-            return success();
+            String result = userService.register(req);
+            return success(result);
         } catch (ApiException e) {
             return e.getResVo();
         }

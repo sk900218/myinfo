@@ -24,6 +24,6 @@ public interface UserService {
      * @param req
      * @throws ApiException
      */
-    public void register(RegisterReq req) throws ApiException;
+    public String register(RegisterReq req) throws ApiException;
 
 }

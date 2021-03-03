@@ -62,7 +62,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void register(RegisterReq req) throws ApiException {
+    public String register(RegisterReq req) throws ApiException {
         /*校验参数*/
         List<ValidParam> ruleList = new ArrayList<>();
         ruleList.add(new StringValiRuleBuilder("account", "账号").notNull().maxSize("账号超出规定长度", 50));
@@ -88,5 +88,7 @@ public class UserServiceImpl implements UserService {
         String pwd = PwdUtils.buildMd5Pwd(req.getPassword(), salt, SystemConst.PASSWORD_HASH_NUMBER);
         sysUser.setPassword(pwd);
         sysUserDao.save(sysUser);
+
+        return sysUser.getId();
     }
 }

@@ -44,7 +44,7 @@ public class ManagerServiceFallbackProvider implements ZuulFallbackProvider {
 
             @Override
             public InputStream getBody() throws IOException {
-                return new ByteArrayInputStream("manager-server不可用".getBytes());
+                return new ByteArrayInputStream("manager-server not available".getBytes());
             }
 
             @Override

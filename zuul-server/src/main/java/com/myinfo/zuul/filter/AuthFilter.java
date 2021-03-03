@@ -1,5 +1,6 @@
 package com.myinfo.zuul.filter;
 
+import com.google.gson.Gson;
 import com.myinfo.zuul.config.AuthConfig;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -8,12 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -68,17 +71,35 @@ public class AuthFilter extends ZuulFilter {
             String value = request.getHeader(key);
             headers.add(key, value);
         }
-        Map<String, Object> map = restTemplate.postForObject("http://" + userServerName + "/auth/token/valid", new HttpEntity<String>(headers), Map.class);
+        Map<String, Object> map = null;
+        try {
+            map = restTemplate.postForObject("http://" + userServerName + "/auth/token/valid", new HttpEntity<String>(headers), Map.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+            log.error("user-server服务异常");
+            ctx.getResponse().setCharacterEncoding("UTF-8");
+            ctx.getResponse().setContentType("application/json;charset=utf-8");
+            ctx.setSendZuulResponse(false);
+            ctx.setResponseStatusCode(HttpStatus.INTERNAL_SERVER_ERROR.value());
+            try {
+                map = new HashMap<>();
+                map.put("code", "500");
+                map.put("message", "服务器异常");
+                ctx.getResponse().getWriter().write(new Gson().toJson(map));
+            } catch (IOException e2) {}
+            return null;
+        }
         Integer code = (Integer)map.get("code");
 
         if(code != 200) {
             String msg = (String)map.get("message");
             log.info(msg);
             ctx.getResponse().setCharacterEncoding("UTF-8");
+            ctx.getResponse().setContentType("application/json;charset=utf-8");
             ctx.setSendZuulResponse(false);
-            ctx.setResponseStatusCode(401);
+            ctx.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
             try {
-                ctx.getResponse().getWriter().write(msg);
+                ctx.getResponse().getWriter().write(new Gson().toJson(map));
             } catch (IOException e) {}
         }
         return null;

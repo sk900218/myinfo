@@ -44,7 +44,7 @@ public class UserServiceFallbackProvider implements ZuulFallbackProvider {
 
             @Override
             public InputStream getBody() throws IOException {
-                return new ByteArrayInputStream("user-server不可用".getBytes());
+                return new ByteArrayInputStream("user-server not available".getBytes());
             }
 
             @Override
