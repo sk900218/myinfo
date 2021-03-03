@@ -58,9 +58,14 @@ public class AuthFilter extends ZuulFilter {
         String uri = request.getRequestURI();
 
         /*地址过滤*/
-        long count = authConfig.getFilter().stream().filter(t -> uri.contains(t)).count();
-        if(count > 0) {
+        if(uri.contains(".")) {
+            //仅针对接口进行过滤
             return null;
+        } else {
+            long count = authConfig.getFilter().stream().filter(t -> uri.contains(t)).count();
+            if (count > 0) {
+                return null;
+            }
         }
 
         //通过用户服务进行鉴权
