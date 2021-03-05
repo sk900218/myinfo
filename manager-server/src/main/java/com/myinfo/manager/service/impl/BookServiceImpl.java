@@ -100,6 +100,16 @@ public class BookServiceImpl extends BaseServiceImpl implements BookService {
     }
 
     @Override
+    public ProBook query(String id) throws ApiException {
+        /*校验参数*/
+        if(StringUtils.isEmpty(id)) {
+            throw new ApiException(ResCode.PARAM_ERROR, "参数异常");
+        }
+        ProBook proBook = proBookDao.getOne(id);
+        return proBook;
+    }
+
+    @Override
     public PageVo<ProBook> queryList(BookListReq req) throws ApiException {
         /*校验参数*/
         List<ValidParam> ruleList = new ArrayList<>();

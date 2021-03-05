@@ -62,6 +62,17 @@ public class BookController extends BaseController {
         }
     }
 
+    @ApiOperation(value = "查询图书")
+    @GetMapping("/{id}")
+    public ResVo<ProBook> query(@ApiParam(value = "UUID", required = true) @PathVariable("id") String id) {
+        try {
+            ProBook result = bookService.query(id);
+            return success(result);
+        } catch (ApiException e) {
+            return e.getResVo();
+        }
+    }
+
     @ApiOperation(value = "查询图书列表")
     @GetMapping("/list")
     public ResVo<PageVo<ProBook>> list(BookListReq req) {

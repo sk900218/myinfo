@@ -38,6 +38,13 @@ public interface BookService extends BaseService {
     public void delete(String id) throws ApiException;
 
     /**
+     * 查询图书
+     * @param id
+     * @return
+     */
+    public ProBook query(String id) throws ApiException;
+
+    /**
      * 查询图书列表
      * @param req
      * @return
