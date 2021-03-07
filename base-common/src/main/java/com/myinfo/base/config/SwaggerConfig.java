@@ -31,7 +31,7 @@ public class SwaggerConfig {
 
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("eureka服务端提供者接口平台").description("服务相关数据接口")
+        return new ApiInfoBuilder().title("服务端提供者接口").description("服务相关数据接口")
                 .license("Licence Version 1.0").licenseUrl("#").version("1.0").build();
     }
 

@@ -3,3 +3,5 @@ auth:
   filter:
     - '/user/login' #登录
     - '/user/register' #注册
+    - 'swagger' #swagger
+    - '/api-doc' #swagger
